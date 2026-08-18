@@ -1,0 +1,773 @@
+[
+  {
+    "portfolio_no": "PF-1001",
+    "status": "ok",
+    "elapsed_seconds": 0.001,
+    "evidence_bundle": {
+      "portfolio_no": "PF-1001",
+      "investor_name": "Priya Sharma",
+      "age": 29,
+      "goal": "wealth creation",
+      "horizon_years": 20,
+      "risk_appetite": "aggressive",
+      "monthly_investment_capacity": 25000.0,
+      "holdings": [
+        {
+          "scheme_name": "Quant Small Cap Fund - Direct Growth",
+          "scheme_code": "120828",
+          "category": "Equity - Small Cap",
+          "weight_pct": 56.33,
+          "gain_pct": 33.89,
+          "invested_amount": 180000.0,
+          "market_value": 241000.0,
+          "absolute_gain": 61000.0,
+          "xirr_pct": 6.81,
+          "xirr_unavailable_reason": null,
+          "risk_grade": "Very High",
+          "risk_source": "seed_data"
+        },
+        {
+          "scheme_name": "Parag Parikh Flexi Cap Fund - Direct Growth",
+          "scheme_code": "122639",
+          "category": "Equity - Flexi Cap",
+          "weight_pct": 17.41,
+          "gain_pct": 24.17,
+          "invested_amount": 60000.0,
+          "market_value": 74500.0,
+          "absolute_gain": 14500.0,
+          "xirr_pct": 5.49,
+          "xirr_unavailable_reason": null,
+          "risk_grade": "Very High",
+          "risk_source": "seed_data"
+        },
+        {
+          "scheme_name": "Nippon India Small Cap Fund - Direct Growth",
+          "scheme_code": "118778",
+          "category": "Equity - Small Cap",
+          "weight_pct": 26.25,
+          "gain_pct": 24.78,
+          "invested_amount": 90000.0,
+          "market_value": 112300.0,
+          "absolute_gain": 22300.0,
+          "xirr_pct": 4.78,
+          "xirr_unavailable_reason": null,
+          "risk_grade": "Very High",
+          "risk_source": "seed_data"
+        }
+      ],
+      "category_allocation": [
+        {
+          "category": "Equity - Small Cap",
+          "weight_pct": 82.59,
+          "market_value": 353300.0
+        },
+        {
+          "category": "Equity - Flexi Cap",
+          "weight_pct": 17.41,
+          "market_value": 74500.0
+        }
+      ],
+      "asset_class_allocation": [
+        {
+          "asset_class": "Equity",
+          "weight_pct": 100.0
+        }
+      ],
+      "concentration": {
+        "hhi": 0.4166,
+        "hhi_interpretation": "high",
+        "top_holding_weight_pct": 56.33,
+        "top_holding_name": "Quant Small Cap Fund - Direct Growth"
+      },
+      "overlap_flags": [
+        {
+          "fund_a": "Quant Small Cap Fund - Direct Growth",
+          "fund_b": "Nippon India Small Cap Fund - Direct Growth",
+          "category": "Equity - Small Cap",
+          "reason": "Both funds sit in the same category (Equity - Small Cap); likely overlapping stock/bond exposure, though exact portfolio overlap isn't computed here without underlying constituent data."
+        }
+      ],
+      "portfolio_returns": {
+        "total_invested": 330000.0,
+        "total_market_value": 427800.0,
+        "absolute_gain": 97800.0,
+        "absolute_gain_pct": 29.64,
+        "portfolio_xirr_pct": 6.01,
+        "xirr_note": null
+      },
+      "suitability_checks": [
+        {
+          "check_name": "horizon_vs_equity_exposure",
+          "result": "aligned",
+          "detail": "20-year horizon comfortably supports the current 100.0% equity exposure."
+        },
+        {
+          "check_name": "risk_appetite_vs_concentration",
+          "result": "aligned",
+          "detail": "Portfolio concentration (high, HHI 0.4166) is broadly consistent with a 'aggressive' risk appetite."
+        },
+        {
+          "check_name": "sip_capacity_utilization",
+          "result": "insufficient_data",
+          "detail": "No SIP/transaction history was supplied, only point-in-time invested and market values, so whether the stated monthly capacity is being fully utilized can't be determined."
+        }
+      ],
+      "data_quality_issues": [],
+      "generated_at": "2026-08-18T10:42:55.938842+00:00",
+      "nav_data_as_of": "input-supplied (no live NAV fetch in this run)",
+      "data_freshness_note": "Market values taken as supplied in the input; not re-fetched from a live NAV source in this prototype run (see README, AMFI integration)."
+    },
+    "insight_output": {
+      "portfolio_no": "PF-1001",
+      "investor_name": "Priya Sharma",
+      "insights": [
+        {
+          "title": "Portfolio concentration is high",
+          "category": "concentration",
+          "priority": 1,
+          "explanation": "Quant Small Cap Fund - Direct Growth alone makes up 56.33% of the portfolio (HHI 0.4166, high concentration). A large move in this single fund will move the whole portfolio more than a diversified holding pattern would.",
+          "evidence_refs": [
+            "concentration.top_holding_weight_pct",
+            "concentration.hhi"
+          ],
+          "numbers_cited": [
+            56.33,
+            0.4166
+          ]
+        },
+        {
+          "title": "Multiple funds in the same category",
+          "category": "overlap",
+          "priority": 2,
+          "explanation": "The portfolio holds more than one scheme in Equity - Small Cap. These funds likely have overlapping underlying holdings, so the effective diversification benefit is smaller than the fund count suggests.",
+          "evidence_refs": [
+            "overlap_flags"
+          ],
+          "numbers_cited": []
+        },
+        {
+          "title": "Overall portfolio performance",
+          "category": "performance",
+          "priority": 3,
+          "explanation": "Total invested amount of 330000.0 has grown to a market value of 427800.0, a gain of 29.64%. Portfolio XIRR is approximately 6.01%.",
+          "evidence_refs": [
+            "portfolio_returns"
+          ],
+          "numbers_cited": [
+            330000.0,
+            427800.0,
+            29.64,
+            6.01
+          ]
+        },
+        {
+          "title": "Equity exposure relative to horizon",
+          "category": "allocation",
+          "priority": 4,
+          "explanation": "100.0% of the portfolio is in equity against a 20-year horizon for 'wealth creation'.",
+          "evidence_refs": [
+            "asset_class_allocation"
+          ],
+          "numbers_cited": [
+            100.0,
+            20.0
+          ]
+        }
+      ],
+      "disclaimer": "Mutual fund investments are subject to market risk. Past performance is not indicative of future returns. Please read all scheme-related documents carefully before investing. The insights above are generated by an automated system for informational purposes only and do not constitute investment advice.",
+      "generation_mode": "fallback_template",
+      "warnings": [
+        "No OPENAI_API_KEY configured in this environment - used the deterministic template fallback instead of the LLM drafting layer."
+      ]
+    }
+  },
+  {
+    "portfolio_no": "PF-1002",
+    "status": "ok",
+    "elapsed_seconds": 0.001,
+    "evidence_bundle": {
+      "portfolio_no": "PF-1002",
+      "investor_name": "Rajesh Kumar",
+      "age": 52,
+      "goal": "retirement",
+      "horizon_years": 6,
+      "risk_appetite": "conservative",
+      "monthly_investment_capacity": 15000.0,
+      "holdings": [
+        {
+          "scheme_name": "HDFC Balanced Advantage Fund - Direct Growth",
+          "scheme_code": "119088",
+          "category": "Hybrid - Balanced Advantage",
+          "weight_pct": 45.09,
+          "gain_pct": 13.0,
+          "invested_amount": 400000.0,
+          "market_value": 452000.0,
+          "absolute_gain": 52000.0,
+          "xirr_pct": 1.71,
+          "xirr_unavailable_reason": null,
+          "risk_grade": "High",
+          "risk_source": "seed_data"
+        },
+        {
+          "scheme_name": "ICICI Prudential Short Term Fund - Direct Growth",
+          "scheme_code": "120180",
+          "category": "Debt - Short Duration",
+          "weight_pct": 33.07,
+          "gain_pct": 10.5,
+          "invested_amount": 300000.0,
+          "market_value": 331500.0,
+          "absolute_gain": 31500.0,
+          "xirr_pct": 1.53,
+          "xirr_unavailable_reason": null,
+          "risk_grade": "Moderate",
+          "risk_source": "seed_data"
+        },
+        {
+          "scheme_name": "SBI Small Cap Fund - Direct Growth",
+          "scheme_code": "125497",
+          "category": "Equity - Small Cap",
+          "weight_pct": 21.85,
+          "gain_pct": 46.0,
+          "invested_amount": 150000.0,
+          "market_value": 219000.0,
+          "absolute_gain": 69000.0,
+          "xirr_pct": 6.56,
+          "xirr_unavailable_reason": null,
+          "risk_grade": "Very High",
+          "risk_source": "seed_data"
+        }
+      ],
+      "category_allocation": [
+        {
+          "category": "Hybrid - Balanced Advantage",
+          "weight_pct": 45.09,
+          "market_value": 452000.0
+        },
+        {
+          "category": "Debt - Short Duration",
+          "weight_pct": 33.07,
+          "market_value": 331500.0
+        },
+        {
+          "category": "Equity - Small Cap",
+          "weight_pct": 21.85,
+          "market_value": 219000.0
+        }
+      ],
+      "asset_class_allocation": [
+        {
+          "asset_class": "Hybrid",
+          "weight_pct": 45.09
+        },
+        {
+          "asset_class": "Debt",
+          "weight_pct": 33.07
+        },
+        {
+          "asset_class": "Equity",
+          "weight_pct": 21.85
+        }
+      ],
+      "concentration": {
+        "hhi": 0.3604,
+        "hhi_interpretation": "high",
+        "top_holding_weight_pct": 45.09,
+        "top_holding_name": "HDFC Balanced Advantage Fund - Direct Growth"
+      },
+      "overlap_flags": [],
+      "portfolio_returns": {
+        "total_invested": 850000.0,
+        "total_market_value": 1002500.0,
+        "absolute_gain": 152500.0,
+        "absolute_gain_pct": 17.94,
+        "portfolio_xirr_pct": 2.47,
+        "xirr_note": null
+      },
+      "suitability_checks": [
+        {
+          "check_name": "horizon_vs_equity_exposure",
+          "result": "aligned",
+          "detail": "Equity exposure (21.85%) is reasonably contained for a 6-year horizon."
+        },
+        {
+          "check_name": "risk_appetite_vs_concentration",
+          "result": "mismatch",
+          "detail": "Investor self-declared 'conservative' but portfolio concentration is high (HHI 0.3604), driven by HDFC Balanced Advantage Fund - Direct Growth at 45.09% of the portfolio."
+        },
+        {
+          "check_name": "sip_capacity_utilization",
+          "result": "insufficient_data",
+          "detail": "No SIP/transaction history was supplied, only point-in-time invested and market values, so whether the stated monthly capacity is being fully utilized can't be determined."
+        }
+      ],
+      "data_quality_issues": [],
+      "generated_at": "2026-08-18T10:42:55.939505+00:00",
+      "nav_data_as_of": "input-supplied (no live NAV fetch in this run)",
+      "data_freshness_note": "Market values taken as supplied in the input; not re-fetched from a live NAV source in this prototype run (see README, AMFI integration)."
+    },
+    "insight_output": {
+      "portfolio_no": "PF-1002",
+      "investor_name": "Rajesh Kumar",
+      "insights": [
+        {
+          "title": "Portfolio concentration is high",
+          "category": "concentration",
+          "priority": 1,
+          "explanation": "HDFC Balanced Advantage Fund - Direct Growth alone makes up 45.09% of the portfolio (HHI 0.3604, high concentration). A large move in this single fund will move the whole portfolio more than a diversified holding pattern would.",
+          "evidence_refs": [
+            "concentration.top_holding_weight_pct",
+            "concentration.hhi"
+          ],
+          "numbers_cited": [
+            45.09,
+            0.3604
+          ]
+        },
+        {
+          "title": "Risk appetite vs concentration",
+          "category": "suitability",
+          "priority": 2,
+          "explanation": "Investor self-declared 'conservative' but portfolio concentration is high (HHI 0.3604), driven by HDFC Balanced Advantage Fund - Direct Growth at 45.09% of the portfolio.",
+          "evidence_refs": [
+            "suitability_checks[risk_appetite_vs_concentration]"
+          ],
+          "numbers_cited": [
+            0.3604,
+            45.09
+          ]
+        },
+        {
+          "title": "Overall portfolio performance",
+          "category": "performance",
+          "priority": 3,
+          "explanation": "Total invested amount of 850000.0 has grown to a market value of 1002500.0, a gain of 17.94%. Portfolio XIRR is approximately 2.47%.",
+          "evidence_refs": [
+            "portfolio_returns"
+          ],
+          "numbers_cited": [
+            850000.0,
+            1002500.0,
+            17.94,
+            2.47
+          ]
+        },
+        {
+          "title": "Equity exposure relative to horizon",
+          "category": "allocation",
+          "priority": 4,
+          "explanation": "21.85% of the portfolio is in equity against a 6-year horizon for 'retirement'.",
+          "evidence_refs": [
+            "asset_class_allocation"
+          ],
+          "numbers_cited": [
+            21.85,
+            6.0
+          ]
+        }
+      ],
+      "disclaimer": "Mutual fund investments are subject to market risk. Past performance is not indicative of future returns. Please read all scheme-related documents carefully before investing. The insights above are generated by an automated system for informational purposes only and do not constitute investment advice.",
+      "generation_mode": "fallback_template",
+      "warnings": [
+        "No OPENAI_API_KEY configured in this environment - used the deterministic template fallback instead of the LLM drafting layer."
+      ]
+    }
+  },
+  {
+    "portfolio_no": "PF-1003",
+    "status": "ok",
+    "elapsed_seconds": 0.0,
+    "evidence_bundle": {
+      "portfolio_no": "PF-1003",
+      "investor_name": "Ananya Verma",
+      "age": 35,
+      "goal": "child's education",
+      "horizon_years": 12,
+      "risk_appetite": "moderate",
+      "monthly_investment_capacity": 18000.0,
+      "holdings": [
+        {
+          "scheme_name": "Mirae Asset Large Cap Fund - Direct Growth",
+          "scheme_code": "118834",
+          "category": "Equity - Large Cap",
+          "weight_pct": 54.84,
+          "gain_pct": 21.82,
+          "invested_amount": 220000.0,
+          "market_value": 268000.0,
+          "absolute_gain": 48000.0,
+          "xirr_pct": 3.76,
+          "xirr_unavailable_reason": null,
+          "risk_grade": "Very High",
+          "risk_source": "seed_data"
+        },
+        {
+          "scheme_name": "Axis Midcap Fund - Direct Growth",
+          "scheme_code": "120503",
+          "category": "Equity - Mid Cap",
+          "weight_pct": 26.5,
+          "gain_pct": 29.5,
+          "invested_amount": 100000.0,
+          "market_value": 129500.0,
+          "absolute_gain": 29500.0,
+          "xirr_pct": null,
+          "xirr_unavailable_reason": "investment_date missing - XIRR cannot be computed without a cashflow date",
+          "risk_grade": "Very High",
+          "risk_source": "seed_data"
+        },
+        {
+          "scheme_name": "Kotak Equity Hybrid Fund - Direct Growth",
+          "scheme_code": "119796",
+          "category": "Hybrid - Aggressive",
+          "weight_pct": 18.66,
+          "gain_pct": 14.0,
+          "invested_amount": 80000.0,
+          "market_value": 91200.0,
+          "absolute_gain": 11200.0,
+          "xirr_pct": 2.96,
+          "xirr_unavailable_reason": null,
+          "risk_grade": "Very High",
+          "risk_source": "seed_data"
+        }
+      ],
+      "category_allocation": [
+        {
+          "category": "Equity - Large Cap",
+          "weight_pct": 54.84,
+          "market_value": 268000.0
+        },
+        {
+          "category": "Equity - Mid Cap",
+          "weight_pct": 26.5,
+          "market_value": 129500.0
+        },
+        {
+          "category": "Hybrid - Aggressive",
+          "weight_pct": 18.66,
+          "market_value": 91200.0
+        }
+      ],
+      "asset_class_allocation": [
+        {
+          "asset_class": "Equity",
+          "weight_pct": 81.34
+        },
+        {
+          "asset_class": "Hybrid",
+          "weight_pct": 18.66
+        }
+      ],
+      "concentration": {
+        "hhi": 0.4058,
+        "hhi_interpretation": "high",
+        "top_holding_weight_pct": 54.84,
+        "top_holding_name": "Mirae Asset Large Cap Fund - Direct Growth"
+      },
+      "overlap_flags": [],
+      "portfolio_returns": {
+        "total_invested": 400000.0,
+        "total_market_value": 488700.0,
+        "absolute_gain": 88700.0,
+        "absolute_gain_pct": 22.18,
+        "portfolio_xirr_pct": 9.97,
+        "xirr_note": "1 holding(s) missing an investment date; portfolio-level XIRR is computed on the remaining cashflows only and should be read as approximate."
+      },
+      "suitability_checks": [
+        {
+          "check_name": "horizon_vs_equity_exposure",
+          "result": "aligned",
+          "detail": "12-year horizon comfortably supports the current 81.34% equity exposure."
+        },
+        {
+          "check_name": "risk_appetite_vs_concentration",
+          "result": "aligned",
+          "detail": "Portfolio concentration (high, HHI 0.4058) is broadly consistent with a 'moderate' risk appetite."
+        },
+        {
+          "check_name": "sip_capacity_utilization",
+          "result": "insufficient_data",
+          "detail": "No SIP/transaction history was supplied, only point-in-time invested and market values, so whether the stated monthly capacity is being fully utilized can't be determined."
+        }
+      ],
+      "data_quality_issues": [
+        {
+          "scheme_name": "Axis Midcap Fund - Direct Growth",
+          "issue_type": "missing_investment_date",
+          "detail": "No investment date supplied; return-rate (XIRR) skipped for this holding."
+        }
+      ],
+      "generated_at": "2026-08-18T10:42:55.940236+00:00",
+      "nav_data_as_of": "input-supplied (no live NAV fetch in this run)",
+      "data_freshness_note": "Market values taken as supplied in the input; not re-fetched from a live NAV source in this prototype run (see README, AMFI integration)."
+    },
+    "insight_output": {
+      "portfolio_no": "PF-1003",
+      "investor_name": "Ananya Verma",
+      "insights": [
+        {
+          "title": "Portfolio concentration is high",
+          "category": "concentration",
+          "priority": 1,
+          "explanation": "Mirae Asset Large Cap Fund - Direct Growth alone makes up 54.84% of the portfolio (HHI 0.4058, high concentration). A large move in this single fund will move the whole portfolio more than a diversified holding pattern would.",
+          "evidence_refs": [
+            "concentration.top_holding_weight_pct",
+            "concentration.hhi"
+          ],
+          "numbers_cited": [
+            54.84,
+            0.4058
+          ]
+        },
+        {
+          "title": "Return rate can't be calculated for one or more funds",
+          "category": "data_quality",
+          "priority": 2,
+          "explanation": "No investment date was available for Axis Midcap Fund - Direct Growth, so an XIRR (annualized return) could not be computed for this fund. Allocation and concentration figures still include them, only the return-rate view is affected.",
+          "evidence_refs": [
+            "data_quality_issues"
+          ],
+          "numbers_cited": []
+        },
+        {
+          "title": "Overall portfolio performance",
+          "category": "performance",
+          "priority": 3,
+          "explanation": "Total invested amount of 400000.0 has grown to a market value of 488700.0, a gain of 22.18%. Portfolio XIRR is approximately 9.97%.",
+          "evidence_refs": [
+            "portfolio_returns"
+          ],
+          "numbers_cited": [
+            400000.0,
+            488700.0,
+            22.18,
+            9.97
+          ]
+        },
+        {
+          "title": "Equity exposure relative to horizon",
+          "category": "allocation",
+          "priority": 4,
+          "explanation": "81.34% of the portfolio is in equity against a 12-year horizon for 'child's education'.",
+          "evidence_refs": [
+            "asset_class_allocation"
+          ],
+          "numbers_cited": [
+            81.34,
+            12.0
+          ]
+        }
+      ],
+      "disclaimer": "Mutual fund investments are subject to market risk. Past performance is not indicative of future returns. Please read all scheme-related documents carefully before investing. The insights above are generated by an automated system for informational purposes only and do not constitute investment advice.",
+      "generation_mode": "fallback_template",
+      "warnings": [
+        "No OPENAI_API_KEY configured in this environment - used the deterministic template fallback instead of the LLM drafting layer."
+      ]
+    }
+  },
+  {
+    "portfolio_no": "PF-1004",
+    "status": "ok",
+    "elapsed_seconds": 0.0,
+    "evidence_bundle": {
+      "portfolio_no": "PF-1004",
+      "investor_name": "Vikram Singh",
+      "age": 41,
+      "goal": "wealth creation",
+      "horizon_years": 15,
+      "risk_appetite": "moderate-aggressive",
+      "monthly_investment_capacity": 40000.0,
+      "holdings": [
+        {
+          "scheme_name": "ICICI Prudential Bluechip Fund - Direct Growth",
+          "scheme_code": "120586",
+          "category": "Equity - Large Cap",
+          "weight_pct": 35.82,
+          "gain_pct": 19.2,
+          "invested_amount": 250000.0,
+          "market_value": 298000.0,
+          "absolute_gain": 48000.0,
+          "xirr_pct": 2.85,
+          "xirr_unavailable_reason": null,
+          "risk_grade": "Very High",
+          "risk_source": "seed_data"
+        },
+        {
+          "scheme_name": "HDFC Top 100 Fund - Direct Growth",
+          "scheme_code": "118955",
+          "category": "Equity - Large Cap",
+          "weight_pct": 31.13,
+          "gain_pct": 17.73,
+          "invested_amount": 220000.0,
+          "market_value": 259000.0,
+          "absolute_gain": 39000.0,
+          "xirr_pct": 2.9,
+          "xirr_unavailable_reason": null,
+          "risk_grade": "Very High",
+          "risk_source": "seed_data"
+        },
+        {
+          "scheme_name": "SBI Bluechip Fund - Direct Growth",
+          "scheme_code": "119598",
+          "category": "Equity - Large Cap",
+          "weight_pct": 25.36,
+          "gain_pct": 17.22,
+          "invested_amount": 180000.0,
+          "market_value": 211000.0,
+          "absolute_gain": 31000.0,
+          "xirr_pct": 3.16,
+          "xirr_unavailable_reason": null,
+          "risk_grade": "Very High",
+          "risk_source": "seed_data"
+        },
+        {
+          "scheme_name": "Axis Small Cap Fund - Direct Growth",
+          "scheme_code": "122353",
+          "category": "Equity - Small Cap",
+          "weight_pct": 7.69,
+          "gain_pct": 28.0,
+          "invested_amount": 50000.0,
+          "market_value": 64000.0,
+          "absolute_gain": 14000.0,
+          "xirr_pct": 5.51,
+          "xirr_unavailable_reason": null,
+          "risk_grade": "Very High",
+          "risk_source": "seed_data"
+        }
+      ],
+      "category_allocation": [
+        {
+          "category": "Equity - Large Cap",
+          "weight_pct": 92.31,
+          "market_value": 768000.0
+        },
+        {
+          "category": "Equity - Small Cap",
+          "weight_pct": 7.69,
+          "market_value": 64000.0
+        }
+      ],
+      "asset_class_allocation": [
+        {
+          "asset_class": "Equity",
+          "weight_pct": 100.0
+        }
+      ],
+      "concentration": {
+        "hhi": 0.2954,
+        "hhi_interpretation": "high",
+        "top_holding_weight_pct": 35.82,
+        "top_holding_name": "ICICI Prudential Bluechip Fund - Direct Growth"
+      },
+      "overlap_flags": [
+        {
+          "fund_a": "ICICI Prudential Bluechip Fund - Direct Growth",
+          "fund_b": "HDFC Top 100 Fund - Direct Growth",
+          "category": "Equity - Large Cap",
+          "reason": "Both funds sit in the same category (Equity - Large Cap); likely overlapping stock/bond exposure, though exact portfolio overlap isn't computed here without underlying constituent data."
+        },
+        {
+          "fund_a": "ICICI Prudential Bluechip Fund - Direct Growth",
+          "fund_b": "SBI Bluechip Fund - Direct Growth",
+          "category": "Equity - Large Cap",
+          "reason": "Both funds sit in the same category (Equity - Large Cap); likely overlapping stock/bond exposure, though exact portfolio overlap isn't computed here without underlying constituent data."
+        },
+        {
+          "fund_a": "HDFC Top 100 Fund - Direct Growth",
+          "fund_b": "SBI Bluechip Fund - Direct Growth",
+          "category": "Equity - Large Cap",
+          "reason": "Both funds sit in the same category (Equity - Large Cap); likely overlapping stock/bond exposure, though exact portfolio overlap isn't computed here without underlying constituent data."
+        }
+      ],
+      "portfolio_returns": {
+        "total_invested": 700000.0,
+        "total_market_value": 832000.0,
+        "absolute_gain": 132000.0,
+        "absolute_gain_pct": 18.86,
+        "portfolio_xirr_pct": 3.09,
+        "xirr_note": null
+      },
+      "suitability_checks": [
+        {
+          "check_name": "horizon_vs_equity_exposure",
+          "result": "aligned",
+          "detail": "15-year horizon comfortably supports the current 100.0% equity exposure."
+        },
+        {
+          "check_name": "risk_appetite_vs_concentration",
+          "result": "aligned",
+          "detail": "Portfolio concentration (high, HHI 0.2954) is broadly consistent with a 'moderate-aggressive' risk appetite."
+        },
+        {
+          "check_name": "sip_capacity_utilization",
+          "result": "insufficient_data",
+          "detail": "No SIP/transaction history was supplied, only point-in-time invested and market values, so whether the stated monthly capacity is being fully utilized can't be determined."
+        }
+      ],
+      "data_quality_issues": [],
+      "generated_at": "2026-08-18T10:42:55.940741+00:00",
+      "nav_data_as_of": "input-supplied (no live NAV fetch in this run)",
+      "data_freshness_note": "Market values taken as supplied in the input; not re-fetched from a live NAV source in this prototype run (see README, AMFI integration)."
+    },
+    "insight_output": {
+      "portfolio_no": "PF-1004",
+      "investor_name": "Vikram Singh",
+      "insights": [
+        {
+          "title": "Portfolio concentration is high",
+          "category": "concentration",
+          "priority": 1,
+          "explanation": "ICICI Prudential Bluechip Fund - Direct Growth alone makes up 35.82% of the portfolio (HHI 0.2954, high concentration). A large move in this single fund will move the whole portfolio more than a diversified holding pattern would.",
+          "evidence_refs": [
+            "concentration.top_holding_weight_pct",
+            "concentration.hhi"
+          ],
+          "numbers_cited": [
+            35.82,
+            0.2954
+          ]
+        },
+        {
+          "title": "Multiple funds in the same category",
+          "category": "overlap",
+          "priority": 2,
+          "explanation": "The portfolio holds more than one scheme in Equity - Large Cap. These funds likely have overlapping underlying holdings, so the effective diversification benefit is smaller than the fund count suggests.",
+          "evidence_refs": [
+            "overlap_flags"
+          ],
+          "numbers_cited": []
+        },
+        {
+          "title": "Overall portfolio performance",
+          "category": "performance",
+          "priority": 3,
+          "explanation": "Total invested amount of 700000.0 has grown to a market value of 832000.0, a gain of 18.86%. Portfolio XIRR is approximately 3.09%.",
+          "evidence_refs": [
+            "portfolio_returns"
+          ],
+          "numbers_cited": [
+            700000.0,
+            832000.0,
+            18.86,
+            3.09
+          ]
+        },
+        {
+          "title": "Equity exposure relative to horizon",
+          "category": "allocation",
+          "priority": 4,
+          "explanation": "100.0% of the portfolio is in equity against a 15-year horizon for 'wealth creation'.",
+          "evidence_refs": [
+            "asset_class_allocation"
+          ],
+          "numbers_cited": [
+            100.0,
+            15.0
+          ]
+        }
+      ],
+      "disclaimer": "Mutual fund investments are subject to market risk. Past performance is not indicative of future returns. Please read all scheme-related documents carefully before investing. The insights above are generated by an automated system for informational purposes only and do not constitute investment advice.",
+      "generation_mode": "fallback_template",
+      "warnings": [
+        "No OPENAI_API_KEY configured in this environment - used the deterministic template fallback instead of the LLM drafting layer."
+      ]
+    }
+  }
+]
