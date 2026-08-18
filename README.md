@@ -224,7 +224,3 @@ since it makes no network call.
   visibly degrades to a known-safe deterministic path.
 
 ---
-
-## License
-
-Prototype built for a hiring assignment — not licensed for production use.
