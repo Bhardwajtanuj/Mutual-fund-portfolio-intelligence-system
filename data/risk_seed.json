@@ -1,0 +1,16 @@
+{
+  "_source_note": "Manually curated from AMC-published riskometer classifications (SEBI riskometer categories) as of the scheme's latest factsheet at time of writing. NOT a live feed - riskometers can change quarter to quarter and this file should be refreshed before any real use. Covers only the schemes in sample_portfolios.json.",
+  "120828": {"scheme_name": "Quant Small Cap Fund - Direct Growth", "risk_grade": "Very High"},
+  "122639": {"scheme_name": "Parag Parikh Flexi Cap Fund - Direct Growth", "risk_grade": "Very High"},
+  "118778": {"scheme_name": "Nippon India Small Cap Fund - Direct Growth", "risk_grade": "Very High"},
+  "119088": {"scheme_name": "HDFC Balanced Advantage Fund - Direct Growth", "risk_grade": "High"},
+  "120180": {"scheme_name": "ICICI Prudential Short Term Fund - Direct Growth", "risk_grade": "Moderate"},
+  "125497": {"scheme_name": "SBI Small Cap Fund - Direct Growth", "risk_grade": "Very High"},
+  "118834": {"scheme_name": "Mirae Asset Large Cap Fund - Direct Growth", "risk_grade": "Very High"},
+  "120503": {"scheme_name": "Axis Midcap Fund - Direct Growth", "risk_grade": "Very High"},
+  "119796": {"scheme_name": "Kotak Equity Hybrid Fund - Direct Growth", "risk_grade": "Very High"},
+  "120586": {"scheme_name": "ICICI Prudential Bluechip Fund - Direct Growth", "risk_grade": "Very High"},
+  "118955": {"scheme_name": "HDFC Top 100 Fund - Direct Growth", "risk_grade": "Very High"},
+  "119598": {"scheme_name": "SBI Bluechip Fund - Direct Growth", "risk_grade": "Very High"},
+  "122353": {"scheme_name": "Axis Small Cap Fund - Direct Growth", "risk_grade": "Very High"}
+}

@@ -1,0 +1,156 @@
+{
+  "portfolios": [
+    {
+      "portfolio_no": "PF-1001",
+      "investor_name": "Priya Sharma",
+      "age": 29,
+      "goal": "wealth creation",
+      "horizon_years": 20,
+      "risk_appetite": "aggressive",
+      "monthly_investment_capacity": 25000,
+      "notes": "Early career, no dependents, wants aggressive growth",
+      "holdings": [
+        {
+          "scheme_name": "Quant Small Cap Fund - Direct Growth",
+          "scheme_code": "120828",
+          "category": "Equity - Small Cap",
+          "invested_amount": 180000,
+          "market_value": 241000,
+          "investment_date": "2022-03-14"
+        },
+        {
+          "scheme_name": "Parag Parikh Flexi Cap Fund - Direct Growth",
+          "scheme_code": "122639",
+          "category": "Equity - Flexi Cap",
+          "invested_amount": 60000,
+          "market_value": 74500,
+          "investment_date": "2022-08-01"
+        },
+        {
+          "scheme_name": "Nippon India Small Cap Fund - Direct Growth",
+          "scheme_code": "118778",
+          "category": "Equity - Small Cap",
+          "invested_amount": 90000,
+          "market_value": 112300,
+          "investment_date": "2021-11-20"
+        }
+      ]
+    },
+    {
+      "portfolio_no": "PF-1002",
+      "investor_name": "Rajesh Kumar",
+      "age": 52,
+      "goal": "retirement",
+      "horizon_years": 6,
+      "risk_appetite": "conservative",
+      "monthly_investment_capacity": 15000,
+      "notes": "6 years from retirement, wants capital protection over growth",
+      "holdings": [
+        {
+          "scheme_name": "HDFC Balanced Advantage Fund - Direct Growth",
+          "scheme_code": "119088",
+          "category": "Hybrid - Balanced Advantage",
+          "invested_amount": 400000,
+          "market_value": 452000,
+          "investment_date": "2019-06-10"
+        },
+        {
+          "scheme_name": "ICICI Prudential Short Term Fund - Direct Growth",
+          "scheme_code": "120180",
+          "category": "Debt - Short Duration",
+          "invested_amount": 300000,
+          "market_value": 331500,
+          "investment_date": "2020-01-15"
+        },
+        {
+          "scheme_name": "SBI Small Cap Fund - Direct Growth",
+          "scheme_code": "125497",
+          "category": "Equity - Small Cap",
+          "invested_amount": 150000,
+          "market_value": 219000,
+          "investment_date": "2020-09-05"
+        }
+      ]
+    },
+    {
+      "portfolio_no": "PF-1003",
+      "investor_name": "Ananya Verma",
+      "age": 35,
+      "goal": "child's education",
+      "horizon_years": 12,
+      "risk_appetite": "moderate",
+      "monthly_investment_capacity": 18000,
+      "notes": "Saving for a child currently aged 5; one fund's paperwork from the old broker is incomplete",
+      "holdings": [
+        {
+          "scheme_name": "Mirae Asset Large Cap Fund - Direct Growth",
+          "scheme_code": "118834",
+          "category": "Equity - Large Cap",
+          "invested_amount": 220000,
+          "market_value": 268000,
+          "investment_date": "2021-04-12"
+        },
+        {
+          "scheme_name": "Axis Midcap Fund - Direct Growth",
+          "scheme_code": "120503",
+          "category": "Equity - Mid Cap",
+          "invested_amount": 100000,
+          "market_value": 129500,
+          "investment_date": null
+        },
+        {
+          "scheme_name": "Kotak Equity Hybrid Fund - Direct Growth",
+          "scheme_code": "119796",
+          "category": "Hybrid - Aggressive",
+          "invested_amount": 80000,
+          "market_value": 91200,
+          "investment_date": "2022-02-18"
+        }
+      ]
+    },
+    {
+      "portfolio_no": "PF-1004",
+      "investor_name": "Vikram Singh",
+      "age": 41,
+      "goal": "wealth creation",
+      "horizon_years": 15,
+      "risk_appetite": "moderate-aggressive",
+      "monthly_investment_capacity": 40000,
+      "notes": "Holds similar large cap funds picked up from three different banks over the years, never consolidated",
+      "holdings": [
+        {
+          "scheme_name": "ICICI Prudential Bluechip Fund - Direct Growth",
+          "scheme_code": "120586",
+          "category": "Equity - Large Cap",
+          "invested_amount": 250000,
+          "market_value": 298000,
+          "investment_date": "2020-05-22"
+        },
+        {
+          "scheme_name": "HDFC Top 100 Fund - Direct Growth",
+          "scheme_code": "118955",
+          "category": "Equity - Large Cap",
+          "invested_amount": 220000,
+          "market_value": 259000,
+          "investment_date": "2020-11-30"
+        },
+        {
+          "scheme_name": "SBI Bluechip Fund - Direct Growth",
+          "scheme_code": "119598",
+          "category": "Equity - Large Cap",
+          "invested_amount": 180000,
+          "market_value": 211000,
+          "investment_date": "2021-07-08"
+        },
+        {
+          "scheme_name": "Axis Small Cap Fund - Direct Growth",
+          "scheme_code": "122353",
+          "category": "Equity - Small Cap",
+          "invested_amount": 50000,
+          "market_value": 64000,
+          "investment_date": "2022-01-10"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.env
+*.egg-info/
+venv/
+.venv/
+
+# generated at runtime - not source, don't commit
+cache/*
+!cache/.gitkeep
+output/*.json
+output/*.pdf
