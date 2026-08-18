@@ -228,4 +228,3 @@ since it makes no network call.
 ## License
 
 Prototype built for a hiring assignment — not licensed for production use.
-# Mutual-fund-portfolio-intelligence-system
